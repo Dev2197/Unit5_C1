@@ -34,8 +34,5 @@
 }
 .banner{
   display: flex;
-}
-.banner > div{
-  margin-left: 100px;
-  margin-right: 100px;
+  justify-content: space-around;
 }
