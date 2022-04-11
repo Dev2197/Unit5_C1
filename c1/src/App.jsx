@@ -32,11 +32,11 @@ function App() {
     var ball = 0.1
     let res = +(value)+ball
     res = res.toFixed(1)
-    let first = Math.floor(res)
+    let addball = Math.floor(res)
 
-    let float_part = Number((res-first).toFixed(2));
+    let check_over = Number((res-addball).toFixed(2));
 
-    if(+(float_part) > 0.5)
+    if(+(check_over) > 0.5)
     {
       return Math.round(res)
     }
@@ -106,7 +106,7 @@ function App() {
       </div>
 
       {/* If score reaches greater than 100, show text "India Won" without quotes in h1 tag with class name 'status' */}
-      <h1>{count.score>100 ? "India" : ""}</h1>
+      <h1>{count.score>100 ? "India Won" : ""}</h1>
     </div>
   );
 }
