@@ -47,7 +47,7 @@ function App() {
   const [count, setCount] = useState({
     score : 76,
     wickets : 2,
-    over : overs(8)
+    over : overs(8.1)
   })
   return (
     <div className="App">
